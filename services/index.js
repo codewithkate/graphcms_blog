@@ -7,7 +7,6 @@ export const getPosts = async () => {
     query MyQuery {
       postsConnection {
         edges {
-          cursor
           node {
             author {
               bio
@@ -15,6 +14,9 @@ export const getPosts = async () => {
               id
               photo {
                 url
+              }
+              posts {
+                codepen
               }
             }
             createdAt
